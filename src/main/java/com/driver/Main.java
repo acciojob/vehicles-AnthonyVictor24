@@ -5,9 +5,10 @@ public class Main {
         F1 mercedes = new F1("mercedes", false);
         mercedes.move(40, 0);
         mercedes.accelerate(20);
-        mercedes.steer(90);
-        mercedes.steer(10);
+//        mercedes.steer(90);
+//        mercedes.steer(10);
         mercedes.accelerate(-60);
+//        System.out.println(mercedes.getCurrentSpeed());
 
         Boat b1 = new Boat("Titanic",500);
         String vehicleName = b1.getVehicleName();
