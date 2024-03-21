@@ -23,52 +23,29 @@ public class F1 extends Car {
 //        System.out.println("the currentSpped is:"+getCurrentSpeed());
 //        System.out.println("The NewSpeed is:"+newSpeed);
 
-//        if(newSpeed <= 0) {
-//            //Stop the car, set gear as 1
-//            stop();
-//            setGears(1);
-//        }
-//        //for all other cases, change the gear accordingly
-//        else if(newSpeed>0 && newSpeed<=50){
-//            setGears(1);
-//        }else if(newSpeed<=100){
-//            setGears(2);
-//        }else if(newSpeed<=150){
-//            setGears(3);
-//        }else if(newSpeed<=200){
-//            setGears(4);
-//        } else if(newSpeed<=250) {
-//            setGears(5);
-//        }else {
-//            setGears(6);
-//        }
-//
-//        changeGear(getGears());
-//
-//        if(newSpeed > 0) {
-//            changeSpeed(newSpeed, getCurrentDirection());
-//        }
-
-        if (newSpeed <= 0) {
-            // Stop the car if speed becomes non-positive
+        if(newSpeed <= 0) {
+            //Stop the car, set gear as 1
             stop();
             setGears(1);
-        } else {
-            if (newSpeed <= 50) {
-                setGears(1);
-            } else if (newSpeed <= 100) {
-                setGears(2);
-            } else if (newSpeed <= 150) {
-                setGears(3);
-            } else if (newSpeed <= 200) {
-                setGears(4);
-            } else if (newSpeed <= 250) {
-                setGears(5);
-            } else {
-                setGears(6);
-            }
+        }
+        //for all other cases, change the gear accordingly
+        else if(newSpeed>0 && newSpeed<=50){
+            setGears(1);
+        }else if(newSpeed<=100){
+            setGears(2);
+        }else if(newSpeed<=150){
+            setGears(3);
+        }else if(newSpeed<=200){
+            setGears(4);
+        } else if(newSpeed<=250) {
+            setGears(5);
+        }else {
+            setGears(6);
+        }
 
-            changeGear(getGears());
+        changeGear(getGears());
+
+        if(newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }

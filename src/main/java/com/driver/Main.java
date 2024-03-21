@@ -16,23 +16,22 @@ public class Main {
 
         F1 benz = new F1("BENZ",false);
         benz.move(0,45);
-//        benz.accelerate(0);
-//        benz.steer(45);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
+        benz.accelerate(0);
+        benz.steer(45);
+        benz.accelerate(50);
+        benz.accelerate(50);
+        benz.accelerate(50);
+        benz.accelerate(50);
+        benz.accelerate(50);
         benz.accelerate(-100);
-        System.out.println("The CurrentSpeed is: "+benz.getCurrentSpeed());
+
         benz.accelerate(-200);
-        System.out.println("The CurrentSpeed is: "+benz.getCurrentSpeed());
+
         benz.accelerate(300);
-        System.out.println("The CurrentSpeed is: "+benz.getCurrentSpeed());
         benz.accelerate(-200);
-        System.out.println("The CurrentSpeed is: "+benz.getCurrentSpeed());
+
         benz.accelerate(-200);
-        System.out.println("The CurrentSpeed is: "+benz.getCurrentSpeed());
+
 
 //        System.out.println("Current direction is: "+benz.getCurrentDirection());
 
