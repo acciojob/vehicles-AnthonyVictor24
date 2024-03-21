@@ -3,6 +3,7 @@ package com.driver;
 public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
+        super(name, isManual);
         //Use arbitrary values for parameters which are not mentioned
     }
 
@@ -17,14 +18,41 @@ public class F1 extends Car {
          * speed 201-250: gear 5
          * speed more than 250: gear 6
          */
+        int newGear = 1;
 
-        if(newSpeed == 0) {
+        newSpeed = getCurrentSpeed()+rate;
+
+        if(newSpeed <= 0) {
             //Stop the car, set gear as 1
+            stop();
+            setCurrentGear(newGear);
         }
         //for all other cases, change the gear accordingly
+        else if(newSpeed>=1 && newSpeed<=50){
+            newGear=1;
+            setCurrentGear(newGear);
+        }else if(newSpeed>=51 && newSpeed<=100){
+            newGear=2;
+            setCurrentGear(newGear);
+        }else if(newSpeed>=101 && newSpeed<=150){
+            newGear=3;
+            setCurrentGear(newGear);
+        }else if(newSpeed>=151 && newSpeed<=200){
+            newGear=4;
+            setCurrentGear(newGear);
+        } else if(newSpeed>=201 && newSpeed<=250) {
+            newGear=5;
+            setCurrentGear(newGear);
+        }else if(newSpeed>250){
+            newGear=6;
+            setCurrentGear(newGear);
+        }
+
+        changeGear(newGear);
 
         if(newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }
 }
+
