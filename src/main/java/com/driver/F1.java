@@ -19,8 +19,8 @@ public class F1 extends Car {
          * speed more than 250: gear 6
          */
 
-        this.setCurrentSpeed(this.getCurrentSpeed()+rate);
-        int newSpeed = getCurrentSpeed();
+
+        int newSpeed = getCurrentSpeed()+rate;
 //        System.out.println("the currentSpped is:"+getCurrentSpeed());
 //        System.out.println("The NewSpeed is:"+newSpeed);
 
