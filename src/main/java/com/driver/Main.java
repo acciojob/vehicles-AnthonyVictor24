@@ -14,16 +14,17 @@ public class Main {
 //        System.out.println();
 //        System.out.println();
 
-        F1 benz = new F1("BENZ",false);
-//        benz.move(0,45);
-//        benz.accelerate(0);
-//        benz.steer(45);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
-//        benz.accelerate(50);
-//        benz.accelerate(-100);
+        F1 benz = new F1("BMW",false);
+        benz.move(20,45);
+        benz.accelerate(30);
+        benz.steer(45);
+        benz.accelerate(50);
+        benz.accelerate(50);
+        benz.accelerate(50);
+        benz.accelerate(50);
+        benz.accelerate(50);
+        benz.accelerate(-100);
+
 //
 //        benz.accelerate(-200);
 //
@@ -31,16 +32,16 @@ public class Main {
 //        benz.accelerate(-200);
 //
 //        benz.accelerate(-200);
-        benz.accelerate(0);
-        benz.accelerate(50);
-        benz.accelerate(75);
-        benz.accelerate(125);
-        benz.accelerate(151);
-        benz.accelerate(250);
-        benz.accelerate(251);
-        benz.move(100,30);
-        benz.steer(60);
-        benz.accelerate(-100);
+//        benz.accelerate(0);
+//        benz.accelerate(50);
+//        benz.accelerate(75);
+//        benz.accelerate(125);
+//        benz.accelerate(151);
+//        benz.accelerate(250);
+//        benz.accelerate(251);
+//        benz.move(benz.getCurrentSpeed()+100, 30);
+//        benz.steer(60);
+//        benz.accelerate(-100);
 
 
 
